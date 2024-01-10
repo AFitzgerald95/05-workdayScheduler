@@ -11,6 +11,7 @@ var currentDate = dayjs().format('dddd, MMMM DD, YYYY')
    // console.log(currentDate)
 
 var currentHour = dayjs().format('HH');
+
   // console.log(currentHour)
 
   // TODO: Add a listener for click events on the save button. This code should
@@ -60,7 +61,7 @@ timeOfDay();
   // attribute of each time-block be used to do this?
 
 function printSchedule() {
-  $('time-block').each(function() {
+  $('.time-block').each(function() {
     var parentId = $(this).attr('id');
     var storedUserInput = localStorage.getItem(parentId);
     
