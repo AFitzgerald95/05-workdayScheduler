@@ -44,7 +44,7 @@ function timeOfDay() {
   // var currentHour = dayjs().format('HH');
   // console.log(currentHour)
 
-    if (listTime === currentHour) {
+    if (listTime == currentHour) {
       $(this).removeClass('past present future').addClass('present');
     } else if (listTime > currentHour) {
       $(this).removeClass('past present future').addClass('future');
